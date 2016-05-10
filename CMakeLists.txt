@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
-
 project(four_c)
 
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/build/conanbuildinfo.cmake) #Clion, with conanbuildinfo.cmake in build folder
-    include(${CMAKE_CURRENT_SOURCE_DIR}/build/conanbuildinfo.cmake)
+if(EXISTS ${CMAKE_SOURCE_DIR}/.conan/conanbuildinfo.cmake)
+    include(${CMAKE_SOURCE_DIR}/.conan/conanbuildinfo.cmake)
 else()
-    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake) # Not CLion
+    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 endif()
 conan_basic_setup()
 

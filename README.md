@@ -47,7 +47,7 @@ First, we have to make sure that we are using the Clang compiler, so packages th
 $ export CC=clang-3.6
 $ export CXX=clang++-3.6
 // For boost to work
-$ sudo ln -s /usr/bin/clang++-3.6 /usr/bin/clang++
+$ sudo ln -s /usr/bin/clang++-3.6 /usr/local/bin/clang++
 ```
 
 Now we are ready to install all the dependencies. It is retrieving and building Boost, Poco and its
