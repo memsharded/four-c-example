@@ -54,8 +54,10 @@ Now we are ready to install all the dependencies. It is retrieving and building 
 transitive dependencies, like OpenSSL and Zlib, so you might want to go and grab a coffe...
 
 ```bash
-$ conan install .. -s compiler=clang -s compiler.version=3.6 --build
+$ conan install .. -s compiler=clang -s compiler.version=3.6 -s compiler.libcxx=libstdc++ --build
 ```
+
+You might need change your settings, to other version or libcxx, depending on your setup.
 
 ## Building with CMake
 
