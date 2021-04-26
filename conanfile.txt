@@ -8,3 +8,6 @@ cmake
 [imports]
 bin, *.dll -> bin
 bin, *.dylib -> bin
+
+[options]
+boost:shared=True
